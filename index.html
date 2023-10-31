@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container-div">
+        <div class="add-task-div">
+            <h1>Add Task</h1>
+                
+                    <div class="form-layout-div">
+                        <div class="description-div">
+                            <label for="description-input">Title</label> <br/>
+                            <input type="text" id="description-input" data-description-input />
+                        </div>
+                        <div class="deadline-and-button-div">
+                            <div class="deadline-div">
+                                <label for="deadline-input">Deadline</label><br/>
+                                <input type="date" id="deadline-input" data-deadline-input />
+                            </div>
+                            <div class="button-add-div">
+                                <button id="add">Add Task</button>
+                            </div>
+                        </div>
+                    </div>
+                
+         
+        </div>
+        <hr />
+        <div class="task-list-div">
+            <h1>Task List</h1>
+            <div class="task-table-div">
+                <table id="task-table">
+                    <tr>
+                        <th>
+                            <input type="checkbox" id="check-all">
+                        </th>
+                        <th>Description</th>
+                        <th>Deadline</th>
+                    </tr>
+                    <tbody id="task-table-body"></tbody>
+                    <!-- <tr>
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td>first</td>
+                        <td>7:30</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td>second</td>
+                        <td>7:30</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td>third</td>
+                        <td>7:30</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td>fourth</td>
+                        <td>7:30</td>
+                    </tr> -->
+                </tbody>
+                </table>
+                <div class="btn-remove-div">
+                <button id="remove">Mark Complete</button>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
